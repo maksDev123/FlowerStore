@@ -27,12 +27,12 @@ public class StoreTest {
         Item chamomile = new Rose(FlowerColor.RED, 20,7);
         
 
-        Item pack = new FlowerPack((Flower)tulip, 3);
-        Item pack1 = new FlowerPack((Flower)rose, 5);
+        Item pack = new FlowerPack((Flower) tulip, 3);
+        Item pack1 = new FlowerPack((Flower) rose, 5);
 
         List <FlowerPack> packs = new ArrayList<FlowerPack>();
-        packs.add((FlowerPack)pack);
-        packs.add((FlowerPack)pack1);
+        packs.add((FlowerPack) pack);
+        packs.add((FlowerPack) pack1);
 
         Item buckethItems = new FlowerBucket(packs);
         
