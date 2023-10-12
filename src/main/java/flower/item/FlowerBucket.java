@@ -3,8 +3,10 @@ package flower.item;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket {
-    public List<FlowerPack> bucket;
+import flower.store.Item;
+
+public class FlowerBucket extends Item{
+    private List<FlowerPack> bucket;
 
     public FlowerBucket(List<FlowerPack> bucket) {
         this.bucket = bucket;
@@ -14,7 +16,7 @@ public class FlowerBucket {
         this.bucket = new ArrayList<FlowerPack>();
     }
 
-    public double get_overall_price() {
+    public double getPrice() {
         double overal_price = 0;
         for (FlowerPack f : this.bucket) {
             overal_price += f.getPrice();
