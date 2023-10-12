@@ -23,7 +23,6 @@ public class StoreTest {
         Item rose = new Rose(FlowerColor.BLUE, 10, 10);
         Item tulip = new Tulip(FlowerColor.RED, 11, 5);
         Item chamomile = new Rose(FlowerColor.RED, 20, 7);
-        
 
         Item pack = new FlowerPack((Flower) tulip, 3);
         Item pack1 = new FlowerPack((Flower) rose, 5);
