@@ -15,7 +15,7 @@ public class Store {
     public List<Item> searchItems(SearchFilter searchFilter) {
         List<Item> searchItems = new ArrayList<Item>();
         for (Item item : this.items) {
-            if (searchFilter.match(item)){
+            if (searchFilter.match(item)) {
                 searchItems.add(item);
             }
         }

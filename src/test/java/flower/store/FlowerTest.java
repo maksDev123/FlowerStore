@@ -61,6 +61,7 @@ public class FlowerTest {
          10.0, 10.0);
         Assertions.assertEquals(chamomile.getFlowerType(), FlowerType.CHAMOMILE);
     }
+
  @Test
     public void testFlowerPacksAndBucket() {
     Item rose = new Rose(FlowerColor.BLUE, 10.0, 10.0);
