@@ -57,7 +57,8 @@ public class FlowerTest {
 
     @Test
     public void testChamomile() {
-        Chamomile chamomile = new Chamomile(FlowerColor.BLUE, 10.0, 10.0);
+        Chamomile chamomile = new Chamomile(FlowerColor.BLUE,
+         10.0, 10.0);
         Assertions.assertEquals(chamomile.getFlowerType(), FlowerType.CHAMOMILE);
     }
  @Test
@@ -65,15 +66,15 @@ public class FlowerTest {
     Item rose = new Rose(FlowerColor.BLUE, 10.0, 10.0);
     Item tulip = new Tulip(FlowerColor.RED, 11.0, 5.0);
 
-    Item pack = new FlowerPack((Flower)rose, 3);
-    Item pack1 = new FlowerPack((Flower)tulip, 5);
+    Item pack = new FlowerPack((Flower) rose, 3);
+    Item pack1 = new FlowerPack((Flower) tulip, 5);
 
     Assertions.assertEquals(pack.getPrice(), 30.0);
     Assertions.assertEquals(pack1.getPrice(), 25.0);
 
     List <FlowerPack> packs = new ArrayList<FlowerPack>();
-        packs.add((FlowerPack)pack);
-        packs.add((FlowerPack)pack1);
+        packs.add((FlowerPack) pack);
+        packs.add((FlowerPack) pack1);
 
     FlowerBucket buckethItems = new FlowerBucket(packs);
     
