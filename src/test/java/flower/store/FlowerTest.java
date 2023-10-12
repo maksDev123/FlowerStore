@@ -44,32 +44,32 @@ public class FlowerTest {
 
     @Test
     public void testRose() {
-        Rose rose = new Rose(FlowerColor.BLUE, 10, 10);
+        Rose rose = new Rose(FlowerColor.BLUE, 10.0, 10.0);
         Assertions.assertEquals(rose.getFlowerType(), FlowerType.ROSE);
 
     }
 
     @Test
     public void testTulip() {
-        Tulip tulip = new Tulip(FlowerColor.BLUE, 10, 10);
+        Tulip tulip = new Tulip(FlowerColor.BLUE, 10.0, 10.0);
         Assertions.assertEquals(tulip.getFlowerType(), FlowerType.TULIP);
     }
 
     @Test
     public void testChamomile() {
-        Chamomile chamomile = new Chamomile(FlowerColor.BLUE, 10, 10);
+        Chamomile chamomile = new Chamomile(FlowerColor.BLUE, 10.0, 10.0);
         Assertions.assertEquals(chamomile.getFlowerType(), FlowerType.CHAMOMILE);
     }
  @Test
     public void testFlowerPacksAndBucket() {
-    Item rose = new Rose(FlowerColor.BLUE, 10, 10);
-    Item tulip = new Tulip(FlowerColor.RED, 11, 5);
+    Item rose = new Rose(FlowerColor.BLUE, 10.0, 10.0);
+    Item tulip = new Tulip(FlowerColor.RED, 11.0, 5.0);
 
     Item pack = new FlowerPack((Flower)rose, 3);
     Item pack1 = new FlowerPack((Flower)tulip, 5);
 
-    Assertions.assertEquals(pack.getPrice(), 30);
-    Assertions.assertEquals(pack1.getPrice(), 25);
+    Assertions.assertEquals(pack.getPrice(), 30.0);
+    Assertions.assertEquals(pack1.getPrice(), 25.0);
 
     List <FlowerPack> packs = new ArrayList<FlowerPack>();
         packs.add((FlowerPack)pack);
@@ -77,7 +77,7 @@ public class FlowerTest {
 
     FlowerBucket buckethItems = new FlowerBucket(packs);
     
-    Assertions.assertEquals(buckethItems.getPrice(), 55);
+    Assertions.assertEquals(buckethItems.getPrice(), 55.0);
 
 }
    

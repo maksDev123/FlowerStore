@@ -5,7 +5,7 @@ import java.util.List;
 
 import flower.store.Item;
 
-public class FlowerBucket extends Item{
+public class FlowerBucket extends Item {
     private List<FlowerPack> bucket;
 
     public FlowerBucket(List<FlowerPack> bucket) {
@@ -17,10 +17,10 @@ public class FlowerBucket extends Item{
     }
 
     public double getPrice() {
-        double overal_price = 0;
+        double overalPrice = 0;
         for (FlowerPack f : this.bucket) {
-            overal_price += f.getPrice();
+            overalPrice += f.getPrice();
         }
-        return overal_price;
+        return overalPrice;
     }
 }

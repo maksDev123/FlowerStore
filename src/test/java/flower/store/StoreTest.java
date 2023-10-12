@@ -1,6 +1,5 @@
 package flower.store;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import flower.item.Flower;
@@ -13,7 +12,6 @@ import flower.filter.PriceFilter;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 
@@ -22,15 +20,15 @@ public class StoreTest {
 
     @Test
     public void testPrice() {
-        Item rose = new Rose(FlowerColor.BLUE, 10,10);
-        Item tulip = new Tulip(FlowerColor.RED, 11,5);
-        Item chamomile = new Rose(FlowerColor.RED, 20,7);
+        Item rose = new Rose(FlowerColor.BLUE, 10, 10);
+        Item tulip = new Tulip(FlowerColor.RED, 11, 5);
+        Item chamomile = new Rose(FlowerColor.RED, 20, 7);
         
 
         Item pack = new FlowerPack((Flower) tulip, 3);
         Item pack1 = new FlowerPack((Flower) rose, 5);
 
-        List <FlowerPack> packs = new ArrayList<FlowerPack>();
+        List <FlowerPack> packs = new ArrayList <FlowerPack>();
         packs.add((FlowerPack) pack);
         packs.add((FlowerPack) pack1);
 

@@ -25,7 +25,8 @@ public class Flower extends Item {
     }
 
 
-    public Flower(FlowerColor color, FlowerType flowerType, double sepalLength, double price) {
+    public Flower(FlowerColor color, FlowerType flowerType,
+     double sepalLength, double price) {
         this.color = color;
         this.flowerType = flowerType;
         this.sepalLength = sepalLength;

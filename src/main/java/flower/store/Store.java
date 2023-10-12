@@ -13,11 +13,12 @@ public class Store {
     }
 
     public List<Item> searchItems(SearchFilter searchFilter) {
-        List<Item> search_items = new ArrayList<Item>();
+        List<Item> searchItems = new ArrayList<Item>();
         for (Item item : this.items) {
-            if (searchFilter.match(item))
-                search_items.add(item);
+            if (searchFilter.match(item)){
+                searchItems.add(item);
+            }
         }
-        return search_items;
+        return searchItems;
     }
 }
